@@ -1,0 +1,9 @@
+ol li{
+    margin: 20px;
+    padding: 10px;
+    background-color: #9B8816;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    width: 150px
+}
