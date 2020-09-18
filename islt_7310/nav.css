@@ -1,9 +1,36 @@
-ol li{
-    margin: 20px;
-    padding: 10px;
-    background-color: #9B8816;
+nav ul li{
+    margin-bottom: 5px;
     display: block;
-    list-style-type: none;
     text-align: center;
     width: 150px
+}
+
+nav>ul li {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    background-color: #9B8816;
+}
+
+nav a:hover, a:active, a:focus {
+    background-color: #403233;
+}
+
+nav ul>li ul {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 100%;
+    display: none;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
 }
