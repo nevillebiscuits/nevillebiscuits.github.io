@@ -1,4 +1,26 @@
 h1 {
-    
-    color: #3ec28b;
+    margin: 0px;
+    padding-top: 0.67em;
+    color: #EDEFE7;
+    display: block;
+    text-align: left;
+    background-color: #19647E;
+    font-family: 'Oswald', 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+body {
+/*  margin: 0px; */
+    font-family: 'Droid Sans', 'Calibri', 'Arial', 'Helvetica', sans-serif;
+}
+
+p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+    color: #19647E;
+}
+
+p:not(:first-of-type) {
+    text-indent: 2em;
 }

@@ -2,7 +2,7 @@ nav ul li{
     margin-bottom: 5px;
     display: block;
     text-align: center;
-    width: 150px
+    width: 100px;
 }
 
 nav>ul li {
@@ -17,11 +17,11 @@ nav a {
     display: block;
     color: white;
     padding: 15px;
-    background-color: #9B8816;
+    background-color: #403233;
 }
 
 nav a:hover, a:active, a:focus {
-    background-color: #403233;
+    background-color: #9B8816;
 }
 
 nav ul>li ul {
