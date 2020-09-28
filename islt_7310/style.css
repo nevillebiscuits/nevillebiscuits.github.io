@@ -1,18 +1,18 @@
 h1 {
     margin: 0px;
-    padding-top: 0.67em;
+    padding: 0.67em 1em;
     color: #EDEFE7;
     display: block;
     text-align: left;
-    background-color: #19647E;
     font-family: 'Oswald', 'Calibri', 'Arial', 'Helvetica', sans-serif;
     font-variant: small-caps;
     font-weight: bold;
 }
 
 body {
-/*  margin: 0px; */
+    margin: 0px;
     font-family: 'Droid Sans', 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    height: 100vh;
 }
 
 p:first-of-type::first-letter {
@@ -23,4 +23,58 @@ p:first-of-type::first-letter {
 
 p:not(:first-of-type) {
     text-indent: 2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    /* First column should be 10% after nav fix */
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "nav footer footer"
+}
+
+nav {
+    grid-area: nav;
+    padding: 0px 5px;
+    background-color: #EDEFE7;
+    border-right: 0.75em solid #9B8816;
+    border-top: none;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+    background-color: #EDEFE7;
+}
+
+header {
+    grid-area: header;
+    background-color: #19647E;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1em;
+    background-color: #EDEFE7;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr min-content min-content;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+            "nav"
+    }
+    
+    nav {
+        border-right: none;
+        border-top: 0.75em solid #9B8816;
+    }
 }
