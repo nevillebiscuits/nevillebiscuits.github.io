@@ -69,6 +69,11 @@ footer {
 footer img {
     height: 1em;
     width: auto;
+    transition: transform .2s;
+}
+
+footer img:hover {
+    transform: scale(1.5);
 }
 
 @media (max-width: 768px) {
