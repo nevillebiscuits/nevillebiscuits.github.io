@@ -92,3 +92,29 @@ footer img:hover {
         border-top: 0.75em solid #9B8816;
     }
 }
+
+@media print {    
+    * {
+        color: black;
+        font-family: serif;
+    }
+    
+    body {
+        height: auto;
+        margin: 25.4mm;
+    }
+    
+    nav, iframe, footer img {
+        display: none;
+    }
+    
+    header, main, footer {
+        background: none;
+    }
+    
+    h1 {
+        padding: 0px;
+        color: black;
+        font-family: 'Oswald', 'Calibri', 'Arial', 'Helvetica', sans-serif; 
+    }
+}
