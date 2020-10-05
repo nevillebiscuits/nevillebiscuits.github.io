@@ -17,16 +17,6 @@ body {
     height: 100vh;
 }
 
-p:first-of-type::first-letter {
-    font-weight: bold;
-    font-size: 2em;
-    color: #19647E;
-}
-
-p:not(:first-of-type) {
-    text-indent: 2em;
-}
-
 .grid {
     display: grid;
     grid-template-columns: min-content 1fr 1fr;
@@ -62,7 +52,7 @@ footer {
     text-align: center;
     padding: 1em;
     background-color: #EDEFE7;
-    background-image: url("images/belle-hunt-Scvs0tkFfsE-unsplash.jpg");
+    background-image: url("images/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
     background-size: cover;
 }
 
@@ -75,6 +65,36 @@ footer img {
 footer img:hover {
     transform: scale(1.5);
 }
+
+#home img,
+#about img {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin: 10px;
+    max-width: 700px;
+}
+
+.divider {
+    clear: both;
+    border-bottom: 1px black solid;
+}
+
+#project section {
+    clear: both;
+    padding-bottom: 2em;
+}
+
+#project_google img,
+#project_schoology img,
+#project_flipgrid img {
+    width: 50%;
+    height: auto;
+    float: right;
+    margin: 10px;
+    max-width: 500px;
+}
+
 
 @media (max-width: 768px) {
     .grid {
@@ -90,6 +110,7 @@ footer img:hover {
     nav {
         border-right: none;
         border-top: 0.75em solid #9B8816;
+        /* position: sticky;*/
     }
 }
 
