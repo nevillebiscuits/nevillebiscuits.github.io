@@ -95,6 +95,23 @@ footer img:hover {
     max-width: 500px;
 }
 
+table {
+    border: 5px solid red;
+    width: 50%;
+}
+
+table tr:nth-of-type(2n) {
+    background-color: darkgrey;
+    color: white;
+}
+
+table tr:first-of-type,
+table tr:last-of-type {
+    background-color: blue;
+    color: white;
+}
+
+
 
 @media (max-width: 768px) {
     .grid {
@@ -111,6 +128,11 @@ footer img:hover {
         border-right: none;
         border-top: 0.75em solid #9B8816;
         /* position: sticky;*/
+    }
+    
+    table {
+        padding: 10px;
+        width: 100%;
     }
 }
 
