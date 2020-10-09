@@ -29,8 +29,28 @@
         <h1>Contact Me</h1>
     </header>
     <main id="contact">
-        <h2>Send me an email:</h2>
-        <p>Placeholder text</p>
+        <section>
+            <h2>Send me an email:</h2>
+            <form action="mailto:eaagb@umsystem.edu?Subject=Contact%20Me" method="post" enctype="text/plain">
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input name="fname" type="text" id="fname" autofocus required>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input name="lname" type="text" id="lname" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input name="email" type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name= "message" id="message" required></textarea>
+                </div>
+                <input type="submit" name="send">
+            </form>
+        </section>
     </main>
     <footer>Elizabeth Atz | <a href="mailto:eaaggb@umsystem.edu"><img src="images/envelope-solid.svg" /> eaaggb@umsystem.edu</a> | <a href="tel:+18888888888"><img src="images/phone-alt-solid.svg" />+1 888-888-8888</a> | Copyright &copy; 2020 <br /> Icons by <a href="fontawesome.com">Font Awesome</a> | Photos my own or from <a href="https://unsplash.com">Unsplash</a>
     </footer>
