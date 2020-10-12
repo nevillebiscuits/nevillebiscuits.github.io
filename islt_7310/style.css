@@ -95,26 +95,38 @@ footer img:hover {
     max-width: 500px;
 }
 
-table {
-    border: 5px solid red;
-    width: 50%;
+#contact table {
+    width: 70%;
 }
 
-table tr:nth-of-type(2n) {
-    background-color: darkgrey;
-    color: white;
+#contact th {
+    text-align: left;
 }
 
-table tr:first-of-type,
-table tr:last-of-type {
-    background-color: blue;
-    color: white;
+#contact tr th:first-child,
+#contact tr td:first-child {
+    width: 8em;
+    min-width: 8em;
+    max-width: 8em;
+    vertical-align: top;
 }
 
-#contact #message {
-    width: 300px;
-    height: 50px;
+#contact input,
+#contact textarea {
+    width: 100%;
 }
+
+#contact input#submit_contact {
+    padding: 10px;
+    margin: 0px;
+    font-family: 'Oswald', 'Calibri', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.5em;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
 
 @media (max-width: 768px) {
     .grid {
@@ -133,15 +145,11 @@ table tr:last-of-type {
         /* position: sticky;*/
     }
     
-    table {
+    #contact table {
         padding: 10px;
         width: 100%;
     }
     
-    #contact form {
-        width: 30%;
-        margin: 0px auto;
-    }
 }
 
 @media print {    
